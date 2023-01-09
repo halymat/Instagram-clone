@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="shortcut icon" href="images/fivacon1.png" type="image/x-icon" />
+</head>
+
+<body onload="show()">
+    <header>
+        <div class="logo">
+            <img src="images/Instagram_Logo_2010.png" alt="insta logo" />
+        </div>
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa fa-home"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-square-plus"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-compass"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/image33.jpeg" alt="my image" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="left-side">
+            <div class="left-side-story">
+                <div class="left-side-wrap">
+                    <div class="images-content" id="c1">
+                        <a href=""><img src="images/image3.jpg" alt="image3" width="70" height="70" /></a>
+                        <p>Sandrabee</p>
+                    </div>
+                    <div class="images-content" id="c2">
+                        <a href="">
+                            <img src="images/image9.png" alt="image9" width="70" height="70" /></a>
+                        <p>Python</p>
+                    </div>
+                    <div class="images-content" id="c3">
+                        <a href=""><img src="images/images10.jpeg" alt="image10" width="70" height="70" /></a>
+                        <p>FifaWorldCup</p>
+                    </div>
+                    <div class="images-content" id="c4">
+                        <a href=""><img src="images/image5.jpg" alt="image5" width="70" height="70" /></a>
+                        <p>FifaWorldCup</p>
+                    </div>
+                    <div class="images-content" id="c5">
+                        <a href=""><img src="images/image4.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>Sandrbee</p>
+                    </div>
+                    <div class="images-content" id="c6">
+                        <a href=""><img src="images/image12.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>Foller</p>
+                    </div>
+                    <div class="images-content" id="c7">
+                        <a href=""><img src="https://images.pexels.com/photos/10370307/pexels-photo-10370307.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=loadimages/image4.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>LionelMessi</p>
+                    </div>
+                    <div class="images-content" id="c8">
+                        <a href=""><img src="images/messi-2.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>Messi</p>
+                    </div>
+                    <div class="images-content" id="c9">
+                        <a href=""><img src="images/rolando.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>Hally</p>
+                    </div>
+                    <div class="images-content" id="c10">
+                        <a href=""><img src="images/image4.jpg" alt="image6" width="60" height="70" /></a>
+                        <p>Sandra</p>
+                    </div>
+                </div>
+                <i class="fa fa-chevron-circle-left icon-style2 nav-left" onclick="moveLeft()"></i>
+                <i class="fa fa-chevron-circle-right icon-style1 nav-right" onclick="moveRight()"></i>
+            </div>
+            <div class="post">
+                <div class="post-details">
+                    <div class="post-left">
+                        <div class="image">
+                            <img src="images/image88.jpeg" alt="" width="32" height="32" />
+                        </div>
+                        <div class="details">
+                            <p class="name">Kelly Brown</p>
+                            <p class="location">Lagoa Nigria</p>
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="carousel-wrapper">
+                    <span id="item-1"></span>
+                    <span id="item-2"></span>
+                    <span id="item-3"></span>
+                    <div class="carousel-item item-1">
+                        <a href="#item-1" class="arrow-prev arrow"></a>
+                        <a href="#item-2" class="arrow-next arrow"></a>
+                    </div>
+                    <div class="carousel-item item-2">
+                        <a href="#item-1" class="arrow-prev arrow"></a>
+                        <a href="#item-3" class="arrow-next arrow"></a>
+                    </div>
+                    <div class="carousel-item item-3">
+                        <a href="#item-2" class="arrow-prev arrow"></a>
+                        <a href="#item-1" class="arrow-next arrow"></a>
+                    </div>
+                </div>
+
+                <div class="footer-post">
+                    <div class="comment">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="save">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div class="footer-post-content">
+                    <p class="like">123,000 likes</p>
+                    <p class="name">Ayo Marcus <span>Please Subscribe</span></p>
+                    <p class="comments">View all 50,000 comments</p>
+                    <p class="post-time">2 hours ago</p>
+                </div>
+                <div class="add-comment">
+                    <div class="left-side">
+                        <i class="far fa-smile-beam"></i>
+                        <input type="text" placeholder="Add a comment..." />
+                    </div>
+                    <p>Post</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-details">
+                    <div class="post-left">
+                        <div class="image">
+                            <img src="images/messi-2.jpg" alt="" width="32" height="32" />
+                        </div>
+                        <div class="details">
+                            <p class="name">Lionel Messi</p>
+                            <p class="location">Argentina</p>
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="carousel-wrapper">
+                    <span id="item-4"></span>
+                    <span id="item-5"></span>
+                    <span id="item-6"></span>
+                    <div class="carousel-item item-4">
+                        <a href="#item-4" class="arrow-prev arrow"></a>
+                        <a href="#item-5" class="arrow-next arrow"></a>
+                    </div>
+                    <div class="carousel-item item-5">
+                        <a href="#item-4" class="arrow-prev arrow"></a>
+                        <a href="#item-6" class="arrow-next arrow"></a>
+                    </div>
+                    <div class="carousel-item item-6">
+                        <a href="#item-5" class="arrow-prev arrow"></a>
+                        <a href="#item-4" class="arrow-next arrow"></a>
+                    </div>
+                </div>
+
+                <div class="footer-post">
+                    <div class="comment">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="save">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div class="footer-post-content">
+                    <p class="like">123,000 likes</p>
+                    <p class="name">Fifa WorldCup <span>Please Subscribe</span></p>
+                    <p class="comments">View all 50,000 comments</p>
+                    <p class="post-time">2 hours ago</p>
+                </div>
+                <div class="add-comment">
+                    <div class="left-side">
+                        <i class="far fa-smile-beam"></i>
+                        <input type="text" placeholder="Add a comment..." />
+                    </div>
+                    <p>Post</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-details">
+                    <div class="post-left">
+                        <div class="image">
+                            <img src="images/image9.png" alt="" width="32" height="32" />
+                        </div>
+                        <div class="details">
+                            <p class="name">Python Program</p>
+                            <p class="location">Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+
+                <div class="post-contents1"></div>
+                <div class="footer-post">
+                    <div class="comment">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="save">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div class="footer-post-content">
+                    <p class="like">200 likes</p>
+                    <p class="name">Python Program <span>Please Subscribe</span></p>
+                    <p class="comments">View all 32 comments</p>
+                    <p class="post-time">2 day ago</p>
+                </div>
+                <div class="add-comment">
+                    <div class="left-side">
+                        <i class="far fa-smile-beam"></i>
+                        <input type="text" placeholder="Add a comment..." />
+                    </div>
+                    <p>Post</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-details">
+                    <div class="post-left">
+                        <div class="image">
+                            <img src="images/images10.jpeg" alt="" width="32" height="32" />
+                        </div>
+                        <div class="details">
+                            <p class="name">Fifa WorldCup</p>
+                            <p class="location">Qata 2022</p>
+                        </div>
+                    </div>
+                    <div class="post-right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                </div>
+                <div class="post-contents2"></div>
+
+                <div class="footer-post">
+                    <div class="comment">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-comment"></i>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <div class="save">
+                        <i class="far fa-bookmark"></i>
+                    </div>
+                </div>
+
+                <div class="footer-post-content">
+                    <p class="like">123,000 likes</p>
+                    <p class="name">
+                        Fifa WorldCup
+                        <span>Even in defeat, the players of Morocco show shukr to
+                Allah☝🏾</span
+              >
+            </p>
+            <p class="comments">View all 50,000 comments</p>
+            <p class="post-time">2 hours ago</p>
+          </div>
+          <div class="add-comment">
+            <div class="left-side">
+              <i class="far fa-smile-beam"></i>
+              <input type="text" placeholder="Add a comment..." />
+            </div>
+            <p>Post</p>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT-SIDE -->
+      <div class="right-side">
+        <div class="profile-title">
+          <div class="profile-left">
+            <div class="image">
+              <img src="images/image33.jpeg" alt="" width="62" height="62" />
+            </div>
+            <div class="details">
+              <p class="user_name">Hally_Sandy</p>
+              <p class="name">Sadiat Suleiman Abu</p>
+            </div>
+          </div>
+          <div class="profile-right">
+            <a href="#">Switch</a>
+          </div>
+        </div>
+        <div class="suggestion">
+          <p>Suggestions For You</p>
+          <span>See All</span>
+                </div>
+
+                <div class="suggestion-title">
+                    <div class="suggestion-left">
+                        <div class="image">
+                            <img src="images/image3.jpg" alt="" width="38" height="38" />
+                        </div>
+                        <div class="details">
+                            <p class="user_name">HarryB</p>
+                            <p class="name">Suggestion for you</p>
+                        </div>
+                    </div>
+                    <div class="suggestion-right">
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="suggestion-title">
+                    <div class="suggestion-left">
+                        <div class="image">
+                            <img src="images/image4.jpg" alt="" width="38" height="38" />
+                        </div>
+                        <div class="details">
+                            <p class="user_name">Hally_Sandy</p>
+                            <p class="name">Follow you</p>
+                        </div>
+                    </div>
+                    <div class="suggestion-right">
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="suggestion-title">
+                    <div class="suggestion-left">
+                        <div class="image">
+                            <img src="images/image33.jpeg" alt="" width="38" height="38" />
+                        </div>
+                        <div class="details">
+                            <p class="user_name">herental_munet</p>
+                            <p class="name">Suggestion for you</p>
+                        </div>
+                    </div>
+                    <div class="suggestion-right">
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="suggestion-title">
+                    <div class="suggestion-left">
+                        <div class="image">
+                            <img src="images/messi-2.jpg" alt="" width="38" height="38" />
+                        </div>
+                        <div class="details">
+                            <p class="user_name">Andy_fae</p>
+                            <p class="name">Suggestion for you</p>
+                        </div>
+                    </div>
+                    <div class="suggestion-right">
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="suggestion-title">
+                    <div class="suggestion-left">
+                        <div class="image">
+                            <img src="images/image33.jpeg" alt="" width="38" height="38" />
+                        </div>
+                        <div class="details">
+                            <p class="user_name">Preciou2</p>
+                            <p class="name">Suggestion for you</p>
+                        </div>
+                    </div>
+                    <div class="suggestion-right">
+                        <a href="#">Follow</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="links">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+
+                            <li><a href="#">Help</a></li>
+
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Locations</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">Language</a>
+                    <div class="last">
+                        <p>© 2022 INSTAGRAM FROM META</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
